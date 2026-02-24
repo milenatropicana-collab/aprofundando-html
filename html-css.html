@@ -4,44 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>falando sobre html e css</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main>
   <header>
-<img src="data:image/png;base64,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" alt="logo-mdn-docs">
+<img src="data:image/png;base64,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" style=" width: 300px; height:200px;"  alt="logo-mdn-docs">
 <ul>
 
-<li><a href="https://www.google.com/search?q=texto+sobre+o+html&oq=texto+&gs_lcrp=EgZjaHJvbWUqCAgBEEUYJxg7MgYIABBFGDkyCAgBEEUYJxg7MgYIAhAjGCcyDAgDEAAYQxiABBiKBTIKCAQQABixAxiABDIKCAUQABixAxiABDIKCAYQABixAxiABDIGCAcQRRhB0gEINDQ0NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8">HTML
- </li></a>
+<li>
+  <a href="https://www.google.com/search?q=texto+sobre+o+html&oq=texto+&gs_lcrp=EgZjaHJvbWUqCAgBEEUYJxg7MgYIABBFGDkyCAgBEEUYJxg7MgYIAhAjGCcyDAgDEAAYQxiABBiKBTIKCAQQABixAxiABDIKCAUQABixAxiABDIKCAYQABixAxiABDIGCAcQRRhB0gEINDQ0NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8">HTML
+</a></li>
 
-<li><a href="https://www.google.com/search?q=texto+sobre+css&sca_esv=7d344b0fa4f660b1&biw=1024&bih=517&sxsrf=ANbL-n76a4Fgy4HEVSxynd2OuDnnQj1mzA%3A1771869263951&ei=T5ScaaLeOenX5OUPkb28kQM&oq=texto+sobre+o+css&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXRleHRvIHNvYnJlIG8gY3NzKgIIADIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABgWGAoYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIIEAAYogQYiQUyBRAAGO8FSLUpUMEDWPEScAF4AZABAJgBmQGgAfMHqgEDMC43uAEByAEA-AEBmAIIoALECMICChAAGLADGNYEGEfCAgQQIxgnwgIFEAAYgASYAwCIBgGQBgiSBwMxLjegB8gssgcDMC43uAe_CMIHBTItNS4zyAdBgAgA&sclient=gws-wiz-serp">CSS </li></a>
+<li>
+  <a href="https://www.google.com/search?q=texto+sobre+css&sca_esv=7d344b0fa4f660b1&biw=1024&bih=517&sxsrf=ANbL-n76a4Fgy4HEVSxynd2OuDnnQj1mzA%3A1771869263951&ei=T5ScaaLeOenX5OUPkb28kQM&oq=texto+sobre+o+css&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXRleHRvIHNvYnJlIG8gY3NzKgIIADIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMggQABgWGAoYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIIEAAYogQYiQUyBRAAGO8FSLUpUMEDWPEScAF4AZABAJgBmQGgAfMHqgEDMC43uAEByAEA-AEBmAIIoALECMICChAAGLADGNYEGEfCAgQQIxgnwgIFEAAYgASYAwCIBgGQBgiSBwMxLjegB8gssgcDMC43uAe_CMIHBTItNS4zyAdBgAgA&sclient=gws-wiz-serp">CSS </a></li>
 </ul>
 </header>
-<H1>
-  Um ponto sobre HTML e CSS
-</H1>
+<section>
+<h1>  Um ponto sobre HTML e CSS</h1>
+
 <h2>
   HTML
 </h2>
-<p><span style="text-decoration: underline;"><abbr title="HyperText Markup Language">HTML</abbr>
-</span>
+<p> <span class="decoration underline"><abbr title="HyperText Markup Language">HTML</abbr></span>
 
   é a linguagem padrão de marcação para criar a estrutura de páginas web. Ela utiliza tags para organizar conteúdo — como títulos, parágrafos, links, imagens e tabelas. O HTML não é uma linguagem de programação, mas sim a base estrutural (esqueleto) visualizada por navegadores, sendo frequentemente complementada por CSS (estilo) e JavaScript (funcionalidade). </p>
 
- <p>Segundo a <a href="https://developer.mozilla.org/pt-BR/"><cite>documentação do mozilla</cite></p></a>
+ <p> Segundo a <a href="https://developer.mozilla.org/pt-BR/"><cite>documentação do mozilla</cite> </a></p>
 
- <p> No MDN Web Docs (Mozilla), existem mais de 100 elementos HTML, com algumas fontes baseadas na documentação indicando cerca de 142 tags no total, incluindo elementos modernos e obsoletos. A lista abrange diversos propósitos, desde estrutura básica até multimídia, formulários e semântica, cobrindo todo o padrão HTML5 e anteriores. 
+ <p> No MDN Web Docs (Mozilla), existem mais de 100 elementos HTML, com algumas fontes baseadas na documentação indicando cerca de 142 tags no total, incluindo elementos modernos e obsoletos. A lista abrange diversos propósitos, desde estrutura básica até multimídia, formulários e semântica, cobrindo todo o padrão HTML5 e anteriores. quando foi criado o html <time datetime="1991">1991</time> .
+
+  <code> &lt;h1 &gt;Guia Completo de Jardinagem</code> &lt;h1 &gt;.
+<code>&lt;h2 &gt;Ferramentas Necessárias &lt;h2&gt;.
+<code>&lt;h2&gt;Como Plantar Flores</ code>&lt;h2&gt;.
+<code> &lt;h3&gt;Escolhendo as Sementes</code>&lt;h3&gt;.
+<code>&lth2&gt;Manutenção e Rega</code >&lt;h2&gt;
    </p>
 <p>
   As principais tags HTML formam a estrutura base
    html, head, body e a organização de conteúdo h1-h6, p, a, img de uma página web. Tags semânticas modernas como header, nav, section, article e footer são cruciais para SEO e acessibilidade, substituindo o uso excessivo de div.
 </p>
-<h2><a href="Egxnd3Mtd2l6LXNlcnAiEFJFU1VNTyBTT0JSRSBDU1MyBhAAGBYYHjIIEAAYogQYiQUyCBAAGIAEGKIESLBTUKcGWIZEcAN4AZABAJgBnwGgAcwTqgEEMC4xOLgBA8gBAPgBAZgCFaAC9BSoAgrCAgcQIxgnGOoCwgIEECMYJ8ICChAjGIAEGCcYigXCAgsQLhiABBixAxiDAcICCBAuGIAEGLEDwgIIEAAYgAQYsQPCAgsQABiABBixAxiDAcICDhAuGIAEGLEDGNEDGMcBwgIOEC4YgAQYsQMYgwEYigXCAhYQLhiABBixAxjRAxhDGIMBGMcBGIoFwgIQEC4YgAQY0QMYQxjHARiKBcICChAAGIAEGEMYigXCAg0QABiABBhDGMkDGIoFwgILEAAYgAQYkgMYigXCAg0QABiABBixAxhDGIoFwgIFEAAYgATCAgcQIxixAhgnwgIJEAAYgAQYChgLwgIHECMYsAIYJ8ICBxAAGIAEGA2YAwfxBZYX9qjuNuUIkgcEMy4xOKAH64UBsgcEMC4xOLgH3BTCBwgwLjIuMTMuNsgHhQGACAA"></a>
-  CSS
-</h2>
+</section>
+<section>
+
+<h2>CSS</h2>
+<a href="Egxnd3Mtd2l6LXNlcnAiEFJFU1VNTyBTT0JSRSBDU1MyBhAAGBYYHjIIEAAYogQYiQUyCBAAGIAEGKIESLBTUKcGWIZEcAN4AZABAJgBnwGgAcwTqgEEMC4xOLgBA8gBAPgBAZgCFaAC9BSoAgrCAgcQIxgnGOoCwgIEECMYJ8ICChAjGIAEGCcYigXCAgsQLhiABBixAxiDAcICCBAuGIAEGLEDwgIIEAAYgAQYsQPCAgsQABiABBixAxiDAcICDhAuGIAEGLEDGNEDGMcBwgIOEC4YgAQYsQMYgwEYigXCAhYQLhiABBixAxjRAxhDGIMBGMcBGIoFwgIQEC4YgAQY0QMYQxjHARiKBcICChAAGIAEGEMYigXCAg0QABiABBhDGMkDGIoFwgILEAAYgAQYkgMYigXCAg0QABiABBixAxhDGIoFwgIFEAAYgATCAgcQIxixAhgnwgIJEAAYgAQYChgLwgIHECMYsAIYJ8ICBxAAGIAEGA2YAwfxBZYX9qjuNuUIkgcEMy4xOKAH64UBsgcEMC4xOLgH3BTCBwgwLjIuMTMuNsgHhQGACAA"></a>
+
 <p>
-  <spam style="text-decoration-line: underline;"><abbr title="Cascading Style Sheets">CSS</abbr></spam> é uma linguagem de estilos usada para definir a apresentação visual de documentos HTML. Ela separa o conteúdo (estrutura) da forma (design), permitindo estilizar cores, fontes, layouts e criar sites responsivos. As regras CSS funcionam em cascata, aplicadas via seletores a elementos HTML, facilitando a manutenção e consistência.
+  <span class="decoration-underline"><abbr title="Cascading Style Sheets">CSS</abbr></span> é uma linguagem de estilos usada para definir a apresentação visual de documentos HTML. Ela separa o conteúdo (estrutura) da forma (design), permitindo estilizar cores, fontes, layouts e criar sites responsivos. As regras CSS funcionam em cascata, aplicadas via seletores a elementos HTML, facilitando a manutenção e consistência.
 </p>
+<section>
+<p>
+  <q>
+    O HTML não é uma linguagem de programação, mas sim uma linguagem de marcação. Ele usa "etiquetas" (tags) para dizer ao navegador o que é cada parte do conteúdo: isto é um título, isto é um parágrafo, isto é um link.
+  </q>
+</p>
+<pre>
+  <code>
+  p  {
+      color:blue;
+      text-weidth:bold;
+    }
+    <p> 
+  </code>
+</pre>
+</section>
+</section>
 </main>
 </body>
 </html>
